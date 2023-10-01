@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CucumberBDDTestNGProject" parallel="classes" thread-count="3">
+	
+	<!--<listeners>
+		<listener class-name="com.qa.extentReport.ExtentReporterNG" />
+	</listeners>-->
+
+    <test name="Cucmber-Test">
+         <classes>
+			 <class name="testRunner.MyTestRunner"/>
+		 </classes>
+     </test> <!-- Test -->
+</suite> <!-- Suite -->
