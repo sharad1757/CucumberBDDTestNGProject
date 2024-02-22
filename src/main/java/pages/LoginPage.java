@@ -3,13 +3,14 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+
 public class LoginPage {
 
-	private WebDriver driver;
+	public WebDriver driver;
 
 	//1. By Locators 
 
-	private By emailId = By.id("signInEmailId");
+	private By emailId = By.id("signInEmailId"); // signInEmailId
 	private By password = By.id("signInPassword");
 	private By signInbtn = By.id("btnSignIn");
 	private By forgotpwdlink = By.linkText("Forgot Password?");
@@ -18,10 +19,10 @@ public class LoginPage {
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
+		
 	}
 
 	//3. Page Actions/methods
-
 
 	public String getLoginPageTitle()
 	{
@@ -49,5 +50,18 @@ public class LoginPage {
 		driver.findElement(signInbtn).click();
 
 	}
+	
+	public VaultPage doLogin(String uname, String pass) throws InterruptedException {
+		
+		driver.findElement(emailId).sendKeys(uname);
+		driver.findElement(password).sendKeys(pass);
+		driver.findElement(signInbtn).click();
+		Thread.sleep(10000);
+		
+		return new VaultPage(driver);
+		
+		
+	}
+	
 
 }

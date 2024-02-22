@@ -1,43 +1,28 @@
 package stepdefination;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
-import io.cucumber.java.en.Given;
+import factory.DriverFactory;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.LoginPage;
 
-public class LoginPagedefinition {
+public class LoginPagedefinition{
 	
 	
-	private WebDriver driver;
-	private LoginPage loginpage;
+	private LoginPage loginpage = new LoginPage(DriverFactory.getDriver());
 	private static String pagetitle;
 	
-	@Before
-	public void setup()
-	{
-		driver = new FirefoxDriver();
-	}
 	
-	@After
-	public void teardown() {
-		if(driver!=null) {
-			driver.quit();
-		}
-	}
-		
-	@Given("User on login page")
-	public void user_on_login_page() {
-		
-		driver.get("https://crt-emp-blr-wu-ctre-web01.azurewebsites.net/");
-		loginpage = new LoginPage(driver);
-	    
-	}
+	/*
+	 * @Given("User on login page") public void user_on_login_page() {
+	 * 
+	 * // DriverFactory.getDriver().get(
+	 * "https://crt-emp-blr-wu-ctre-web01.azurewebsites.net/");
+	 * System.out.println("User on Login Page");
+	 * 
+	 * }
+	 */
 
 	@When("User gets the title of the page")
 	public void user_gets_the_title_of_the_page() {
@@ -45,7 +30,7 @@ public class LoginPagedefinition {
 		pagetitle = loginpage.getLoginPageTitle();
 
 	}
-
+	
 	@Then("Page Title should be {string}")
 	public void page_title_should_be(String str) {
 		
@@ -72,10 +57,13 @@ public class LoginPagedefinition {
 	}
 
 	@When("user clicks on Sign in button")
-	public void user_clicks_on_sign_in_button() {
-		
+	public void user_clicks_on_sign_in_button() throws InterruptedException {
 		loginpage.clickSignInBtn();
+		Thread.sleep(5000);
 	    
 	}
+	
+	
+	
 
 }

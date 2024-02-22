@@ -1,14 +1,14 @@
 package testRunner;
 
 import org.testng.annotations.DataProvider;
-
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
 		features = {"src/test/resources/appFeature"},
-		glue = {"stepdefination"},
+		glue = {"stepdefination", "myHooks"},
+		//tags = "@end2end",
 		plugin = {"pretty", "html:target/cucmnber-reports", "json:target/cucumber.json"},
 		monochrome = true	
 		
@@ -18,10 +18,11 @@ import io.cucumber.testng.CucumberOptions;
 
 public class MyTestRunner extends AbstractTestNGCucumberTests{
 	
-	@Override
-	@DataProvider(parallel = true)
-	public Object[][] scenarios() {
-		return super.scenarios();
-	}
+	
+	  @Override	  
+	  @DataProvider(parallel = true) 
+	  public Object[][] scenarios() { 
+	  return super.scenarios(); }
+	 
 	
 }
