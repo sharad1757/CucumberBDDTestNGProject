@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Cucmber-Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jan 11 10:46:45 IST 2024</td>
+<td>Started on:</td><td>Fri Mar 01 10:07:58 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>151 seconds (151786 ms)</td>
+<tr><td>Total time:</td><td>34 seconds (34776 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,176 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Request doc page title", "Test Request Document Page Functionlity"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button id=&quot;btnRequestNewDocument&quot; class=&quot;inline-flex items-center justify-center mb-2 mr-2 font-medium tracking-wide rounded-md shadow-md d-flex disabled:opacity-50 disabled:cursor-not-allowed focus:ring-2 focus:outline-none  btn-blue  min-h-[2.5rem] min-w-[64px] px-3 text-base&quot; type=&quot;button&quot;&gt; is not clickable at point (392,248) because another element &lt;div class=&quot;loading-backdrop&quot;&gt; obscures it
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [89765919-ab3c-4ec6-9273-394c47f6d038, clickElement {id=7bc823ce-caac-4814-b06a-2bd8c1182569}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0, moz:accessibilityChecks: false, moz:buildID: 20231220091547, moz:debuggerAddress: 127.0.0.1:41237, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1572, moz:profile: C:\Users\OMEN\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:41237/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (89765919-ab3c-4ec6-9273-394c47f6d038)] -&gt; id: btnRequestNewDocument]
+Session ID: 89765919-ab3c-4ec6-9273-394c47f6d038
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.VaultPage.clickLeftReqDocLink(VaultPage.java:44)
+	at stepdefination.ReqDocPagedefinition.login_into_application_and_navigate_to_requestdoc_page(ReqDocPagedefinition.java:33)
+	at ✽.login into application and navigate to requestdoc page(file:///C:/Users/OMEN/Desktop/workspace/CucumberBDDTestNGProject/src/test/resources/appFeature/requestDocPage.feature:4)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1653871783", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1653871783'><pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;button id=&quot;btnRequestNewDocument&quot; class=&quot;inline-flex items-center justify-center mb-2 mr-2 font-medium tracking-wide rounded-md shadow-md d-flex disabled:opacity-50 disabled:cursor-not-allowed focus:ring-2 focus:outline-none  btn-blue  min-h-[2.5rem] min-w-[64px] px-3 text-base&quot; type=&quot;button&quot;&gt; is not clickable at point (392,248) because another element &lt;div class=&quot;loading-backdrop&quot;&gt; obscures it
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [89765919-ab3c-4ec6-9273-394c47f6d038, clickElement {id=7bc823ce-caac-4814-b06a-2bd8c1182569}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0, moz:accessibilityChecks: false, moz:buildID: 20231220091547, moz:debuggerAddress: 127.0.0.1:41237, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 1572, moz:profile: C:\Users\OMEN\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:41237/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on windows (89765919-ab3c-4ec6-9273-394c47f6d038)] -&gt; id: btnRequestNewDocument]
+Session ID: 89765919-ab3c-4ec6-9273-394c47f6d038
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at pages.VaultPage.clickLeftReqDocLink(VaultPage.java:44)
+	at stepdefination.ReqDocPagedefinition.login_into_application_and_navigate_to_requestdoc_page(ReqDocPagedefinition.java:33)
+	at ✽.login into application and navigate to requestdoc page(file:///C:/Users/OMEN/Desktop/workspace/CucumberBDDTestNGProject/src/test/resources/appFeature/requestDocPage.feature:4)
+</pre></div></td>
+<td>32</td>
+<td>testRunner.MyTestRunner@179ece50</td></tr>
+<tr>
+<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "vaildate different tiles on request doc page", "Test Request Document Page Functionlity"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #btnRequestNewDocument
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fb49d18c-fd90-4e28-9508-06d30e512ec1, findElement {using=id, value=btnRequestNewDocument}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0, moz:accessibilityChecks: false, moz:buildID: 20231220091547, moz:debuggerAddress: 127.0.0.1:33414, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17020, moz:profile: C:\Users\OMEN\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:33414/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fb49d18c-fd90-4e28-9508-06d30e512ec1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at pages.VaultPage.clickLeftReqDocLink(VaultPage.java:44)
+	at stepdefination.ReqDocPagedefinition.login_into_application_and_navigate_to_requestdoc_page(ReqDocPagedefinition.java:33)
+	at ✽.login into application and navigate to requestdoc page(file:///C:/Users/OMEN/Desktop/workspace/CucumberBDDTestNGProject/src/test/resources/appFeature/requestDocPage.feature:4)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1907145602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1907145602'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #btnRequestNewDocument
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [fb49d18c-fd90-4e28-9508-06d30e512ec1, findElement {using=id, value=btnRequestNewDocument}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0, moz:accessibilityChecks: false, moz:buildID: 20231220091547, moz:debuggerAddress: 127.0.0.1:33414, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 17020, moz:profile: C:\Users\OMEN\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:33414/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: fb49d18c-fd90-4e28-9508-06d30e512ec1
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at pages.VaultPage.clickLeftReqDocLink(VaultPage.java:44)
+	at stepdefination.ReqDocPagedefinition.login_into_application_and_navigate_to_requestdoc_page(ReqDocPagedefinition.java:33)
+	at ✽.login into application and navigate to requestdoc page(file:///C:/Users/OMEN/Desktop/workspace/CucumberBDDTestNGProject/src/test/resources/appFeature/requestDocPage.feature:4)
+</pre></div></td>
+<td>33</td>
+<td>testRunner.MyTestRunner@179ece50</td></tr>
+<tr>
+<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Request Documnent Btn", "Test Vault Page Functionality"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #btnRequestNewDocument
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5e5c3a88-7e7a-4bfe-9642-07f38ad8aa4a, findElement {using=id, value=btnRequestNewDocument}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0, moz:accessibilityChecks: false, moz:buildID: 20231220091547, moz:debuggerAddress: 127.0.0.1:43578, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25580, moz:profile: C:\Users\OMEN\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:43578/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5e5c3a88-7e7a-4bfe-9642-07f38ad8aa4a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at pages.VaultPage.validateReqDocButton(VaultPage.java:34)
+	at stepdefination.VaultPagedefinition.vaildate_request_doc_button_is_displayed(VaultPagedefinition.java:53)
+	at ✽.vaildate request doc button is displayed(file:///C:/Users/OMEN/Desktop/workspace/CucumberBDDTestNGProject/src/test/resources/appFeature/vaultPage.feature:15)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace844362540", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace844362540'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #btnRequestNewDocument
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5e5c3a88-7e7a-4bfe-9642-07f38ad8aa4a, findElement {using=id, value=btnRequestNewDocument}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 122.0, moz:accessibilityChecks: false, moz:buildID: 20231220091547, moz:debuggerAddress: 127.0.0.1:43578, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 25580, moz:profile: C:\Users\OMEN\AppData\Local..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:43578/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5e5c3a88-7e7a-4bfe-9642-07f38ad8aa4a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+	at pages.VaultPage.validateReqDocButton(VaultPage.java:34)
+	at stepdefination.VaultPagedefinition.vaildate_request_doc_button_is_displayed(VaultPagedefinition.java:53)
+	at ✽.vaildate request doc button is displayed(file:///C:/Users/OMEN/Desktop/workspace/CucumberBDDTestNGProject/src/test/resources/appFeature/vaultPage.feature:15)
+</pre></div></td>
+<td>32</td>
+<td>testRunner.MyTestRunner@179ece50</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,39 +246,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Request Documnent Btn", "Test Vault Page Functionality"</td>
-<td></td>
-<td>21</td>
-<td>testRunner.MyTestRunner@179ece50</td></tr>
-<tr>
-<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Request doc page title", "Test Request Document Page Functionlity"</td>
+<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Vault Page Title", "Test Vault Page Functionality"</td>
 <td></td>
 <td>32</td>
 <td>testRunner.MyTestRunner@179ece50</td></tr>
 <tr>
-<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Vault Page Title", "Test Vault Page Functionality"</td>
+<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with Correct Credentials", "Login Page Test"</td>
 <td></td>
-<td>23</td>
-<td>testRunner.MyTestRunner@179ece50</td></tr>
-<tr>
-<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "vaildate different tiles on request doc page", "Test Request Document Page Functionlity"</td>
-<td></td>
-<td>31</td>
-<td>testRunner.MyTestRunner@179ece50</td></tr>
-<tr>
-<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Login Page title", "Login Page Test"</td>
-<td></td>
-<td>12</td>
+<td>27</td>
 <td>testRunner.MyTestRunner@179ece50</td></tr>
 <tr>
 <td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate forgot password link", "Login Page Test"</td>
 <td></td>
-<td>13</td>
+<td>20</td>
 <td>testRunner.MyTestRunner@179ece50</td></tr>
 <tr>
-<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with Correct Credentials", "Login Page Test"</td>
+<td title='testRunner.MyTestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunner.MyTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate Login Page title", "Login Page Test"</td>
 <td></td>
-<td>16</td>
+<td>21</td>
 <td>testRunner.MyTestRunner@179ece50</td></tr>
 </table><p>
 </body>
