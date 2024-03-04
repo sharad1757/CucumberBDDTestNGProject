@@ -1,0 +1,6 @@
+pages\VaultPage.class
+pages\RequestDoc.class
+util\ConfigReader.class
+pages\LoginPage.class
+pages\ContactsPage.class
+factory\DriverFactory.class
