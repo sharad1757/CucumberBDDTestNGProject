@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="CucumberBDDTestNGProject">
 	
-	<!--<listeners>
-		<listener class-name="com.qa.extentReport.ExtentReporterNG" />
-	</listeners>-->
+	<listeners>
+		<listener class-name="extendReports.ExtentReporterNG" />
+	</listeners>
 
     <test name="Cucmber-Test">
          <classes>
